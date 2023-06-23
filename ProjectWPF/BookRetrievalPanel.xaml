@@ -1,0 +1,59 @@
+﻿<Window x:Class="ProjectWPF.BookRetrievalPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectWPF"
+        mc:Ignorable="d"
+        Title="BookRetrievalPanel" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded"  Height="450" Width="800" AllowsTransparency="True" WindowStyle="None">
+    <Grid Background="#FF232437">
+        <StackPanel>
+            <DataGrid x:Name="dg1" Height="250" SelectionChanged="dg1_SelectionChanged"/>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="0,10,0,0" FontSize="22" FontFamily="Bahnschrift Light" Text="Name Of Book      :   " Foreground="White"/>
+                        <TextBox FontSize="22" FontFamily="Bahnschrift Light" Width="150" Name="txtboxname"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBlock Margin="0,10,0,0" FontSize="22" FontFamily="Bahnschrift Light" Text="Type Of Book        :   " Foreground="White"/>
+                        <TextBox FontSize="22" FontFamily="Bahnschrift Light" Width="150" Name="txtboxcateg"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBlock Margin="0,10,0,0" FontSize="22" FontFamily="Bahnschrift Light" Text="Search By Letter :   " Foreground="White"/>
+                        <TextBox FontSize="22" FontFamily="Bahnschrift Light" Width="151" Name="txtboxchar"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBlock Margin="0,10,0,0" FontSize="22" FontFamily="Bahnschrift Light" Text="Name Of Writer   :   " Foreground="White"/>
+                        <TextBox FontSize="22" FontFamily="Bahnschrift Light" Width="153" Name="txtboxauthor"/>
+                    </StackPanel>
+
+                </StackPanel>
+
+                <StackPanel  Margin="150,0,0,0">
+                    <CheckBox x:Name="checkbox" Content="Don't Include finished books in the list" FontFamily="Bahnschrift Light" VerticalContentAlignment="Center" FontSize="16" Margin="0,10,0,0" Unchecked="checkbox_Unchecked" Checked="checkbox_Checked" Foreground="White" Cursor="" IsChecked="False"/>
+                    <Button Click="btnsearch_Click" x:Name="btnsearch" Content="Search Book" Margin="0,10,0,0" FontSize="22" Foreground="Black" FontFamily="Bahnschrift Light" Background="#FF00FFF9" Width="250" Height="40" Cursor="Hand" BorderBrush="{x:Null}" BorderThickness="0,0,0,0">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                    <Button Click="btnget_Click" x:Name="btnget" Content="Rent Book"  Margin="0,10,0,0" FontSize="22" Foreground="Black" FontFamily="Bahnschrift Light" Background="#FF00FFF9" Width="250" Height="40" Cursor="Hand" BorderBrush="{x:Null}" BorderThickness="0,0,0,0">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                    <Button Click="btnback_Click" x:Name="btnback" Content="Back"  Margin="0,10,0,0" FontSize="22" Foreground="Black" FontFamily="Bahnschrift Light" Background="#FFE27201" Width="250" Height="40" Cursor="Hand" BorderBrush="{x:Null}" BorderThickness="0,0,0,0">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                </StackPanel>
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

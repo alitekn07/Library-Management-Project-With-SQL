@@ -1,0 +1,19 @@
+﻿<Window x:Class="ProjectWPF.UsedBookPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectWPF"
+        mc:Ignorable="d"
+        Title="UsedBookPanel" WindowStartupLocation="CenterScreen" Height="450" Width="600" AllowsTransparency="True" WindowStyle="None">
+    <Grid Background="#FF232437">
+        <StackPanel>
+            <DataGrid x:Name="dg" Height="290"/>
+            <Button Click="btnback_Click" Foreground="Black" Background="#FFE27201" Margin="0,50,0,0" Cursor="Hand" x:Name="btnback" Width="250" Height="50" Content="Back" FontFamily="Bahnschrift Light" FontSize="20" BorderBrush="{x:Null}" BorderThickness="0,0,0,0">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

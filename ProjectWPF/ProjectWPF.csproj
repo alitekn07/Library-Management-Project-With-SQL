@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Images\ico.ico</ApplicationIcon>
+    <PackageIcon>ico.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1452632149_inspiration-39_icon-icons.com_51111.png" />
+    <None Remove="Back.png" />
+    <None Remove="Captsdure-removebg-preview.png" />
+    <None Remove="delete_102866.png" />
+    <None Remove="icon-removebg-preview.png" />
+    <None Remove="Instagram_icon-icons.com_66804.png" />
+    <None Remove="internet_lock_locked_padlock_password_secure_security_icon_127078.png" />
+    <None Remove="linkedin_icon-icons.com_65929.png" />
+    <None Remove="logo_github_icon_143196.png" />
+    <None Remove="remove_delete_close_1075.png" />
+    <None Remove="rotation_102346.png" />
+    <None Remove="sd.png" />
+    <None Remove="Twitter_icon-icons.com_66803.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\ico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Desktop\images\ico.png" Link="Images\ico.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.OleDb" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Back.png" />
+    <Resource Include="Images\User.png" />
+    <Resource Include="Images\Logo.png" />
+    <Resource Include="Images\Instagram.png" />
+    <Resource Include="Images\Lock.png" />
+    <Resource Include="Images\LinkedIn.png" />
+    <Resource Include="Images\Github.png" />
+    <Resource Include="Images\Exit.png" />
+    <Resource Include="Images\Twitter.png" />
+  </ItemGroup>
+
+</Project>

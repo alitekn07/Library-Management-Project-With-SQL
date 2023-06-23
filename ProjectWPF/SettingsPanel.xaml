@@ -1,0 +1,45 @@
+﻿<Window x:Class="ProjectWPF.SettingsPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectWPF"
+        mc:Ignorable="d"
+        Title="SettingsPanel" WindowStartupLocation="CenterScreen" Height="450" Width="450" AllowsTransparency="True" WindowStyle="None">
+    <Grid Background="#FF232437">
+        <StackPanel>
+            <TextBlock FontFamily="Bahnschrift Light" Text="Student's Book Return Period" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="25" Foreground="White">
+                <TextBlock.Effect>
+                    <DropShadowEffect/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBox x:Name="txtboxday" FontFamily="Bahnschrift Light" Width="350" Margin="0,40,0,0">
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <TextBlock FontFamily="Bahnschrift Light" Text="Number of Books Students Can Rent" HorizontalAlignment="Center" Margin="0,40,0,0" FontSize="25" Foreground="White">
+                <TextBlock.Effect>
+                    <DropShadowEffect/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBox x:Name="txtboxnum" FontFamily="Bahnschrift Light" Width="350" Margin="0,40,0,0">
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <StackPanel Orientation="Horizontal">
+                <Button Click="btnedit_Click" Background="#FFF1EFF1" Foreground="Black" Height="50" Margin="20,80,0,0" x:Name="btnedit" Content="Edit" Width="150" FontSize="25" FontFamily="Bahnschrift Light" BorderThickness="0,0,0,0" Cursor="Hand">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
+                <Button Click="btnback_Click"  Background="#FFF1EFF1" Foreground="Black" Height="50" Margin="95,80,0,0" x:Name="btnback" Content="Back" Width="150" FontSize="25" FontFamily="Bahnschrift Light" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Cursor="Hand">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

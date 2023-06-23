@@ -1,0 +1,105 @@
+﻿<Window x:Class="ProjectWPF.AddBookPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectWPF"
+        mc:Ignorable="d"
+        Title="AddBookPanel" WindowStartupLocation="CenterScreen" Height="520" Width="450" AllowsTransparency="True" WindowStyle="None">
+    <Grid Background="#FF232437">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+                <TextBlock Margin="10,10,0,0" FontFamily="Bahnschrift Light" Text="Enter Book Name" FontSize="18" Foreground="White" TextAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <TextBox  x:Name="txtboxname" Margin="10,0,0,0" HorizontalAlignment="Left" Width="145">
+                    <TextBox.Effect>
+                        <DropShadowEffect/>
+                    </TextBox.Effect>
+                </TextBox>
+
+                <TextBlock  Margin="10,40,0,0" FontFamily="Bahnschrift Light" Text="Enter Page Number" FontSize="18" Foreground="White" TextAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <TextBox x:Name="txtboxps" Margin="10,0,0,0" HorizontalAlignment="Left" Width="145">
+                    <TextBox.Effect>
+                        <DropShadowEffect/>
+                    </TextBox.Effect>
+                </TextBox>
+
+
+                <TextBlock Margin="10,40,0,0" FontFamily="Bahnschrift Light" Text="Enter Category" FontSize="18" Foreground="White" TextAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <TextBox x:Name="txtboxcateg"  Margin="10,0,0,0" HorizontalAlignment="Left" Width="145">
+                    <TextBox.Effect>
+                        <DropShadowEffect/>
+                    </TextBox.Effect>
+                </TextBox>
+
+
+                <TextBlock Margin="10,40,0,0" FontFamily="Bahnschrift Light" Text="Enter Author Name" FontSize="18" Foreground="White" TextAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <TextBox  x:Name="txtboxauthor"  Margin="10,0,0,0" HorizontalAlignment="Left" Width="145">
+                    <TextBox.Effect>
+                        <DropShadowEffect/>
+                    </TextBox.Effect>
+                </TextBox>
+
+
+                <TextBlock  Margin="10,40,0,0" FontFamily="Bahnschrift Light" Text="Enter Book Year" FontSize="18" Foreground="White" TextAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <TextBox  x:Name="txtboxyear" Margin="10,0,0,0" HorizontalAlignment="Left" Width="145">
+                    <TextBox.Effect>
+                        <DropShadowEffect/>
+                    </TextBox.Effect>
+                </TextBox>
+
+
+                <TextBlock  Margin="10,40,0,0" FontFamily="Bahnschrift Light" Text="Number of Books" FontSize="18" Foreground="White" TextAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <TextBox x:Name="txtboxnumbook" Margin="10,0,0,0" HorizontalAlignment="Left" Width="145">
+                    <TextBox.Effect>
+                        <DropShadowEffect/>
+                    </TextBox.Effect>
+                </TextBox>
+
+            </StackPanel>
+
+            <StackPanel  Margin="135,0,0,0" Orientation="Vertical" Width="142">
+                <Button x:Name="btnadd" Margin="0,10,0,0" Height="50"  FontFamily="Bahnschrift Light" FontSize="20" Content="Save" Background="#FFF1EFF1" Foreground="Black" Width="137" Click="btnadd_Click" BorderBrush="{x:Null}" >
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
+                <Button x:Name="btnopenlist" Margin="0,170,0,0" Height="50"  FontFamily="Bahnschrift Light" FontSize="14" Content="Open Book List" Background="#FFF1EFF1" Foreground="Black" Width="137" Click="btnopenlist_Click" BorderBrush="{x:Null}" >
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
+                <Button  x:Name="btnback" Margin="0,180,0,0" Height="50"  FontFamily="Bahnschrift Light" FontSize="20" Content="Back" Background="#FFE27201" Foreground="Black" Width="137" Click="btnback_Click" BorderBrush="{x:Null}" >
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
