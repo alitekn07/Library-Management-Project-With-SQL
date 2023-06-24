@@ -33,7 +33,7 @@
 
 <h1>About</h1>
 
-<p align="justify"> ASDADS</p>
+<p align="justify">With this project, you will be able to control the SQL data-based library management system. There are 3 levels of authority: Student, Teacher and Admin. Student 2, Teacher can rent 5 books, Admin can add and delete books, edit books, determine the maximum delivery day, determine the maximum rental number. In short, the Admin has all the privileges.</p>
 
 <div align="center">
       <a href="https://www.youtube.com/watch?v=OqFPjMC7IF0">
