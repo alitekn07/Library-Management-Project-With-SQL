@@ -1,5 +1,5 @@
   <p align="center">
-  <a href="https://github.com/alitekn07/Project-Web-Crawler"><img src="https://raw.githubusercontent.com/alitekn07/Library-Management-Project-With-SQL/main/ProjectWPF/MainWindow.JPG"/>
+  <a href="https://github.com/alitekn07/Project-Web-Crawler"><img src="https://i.imgur.com/81NxdhF.png"/>
 
 
                                                                
